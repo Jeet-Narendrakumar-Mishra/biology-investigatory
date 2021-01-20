@@ -18,7 +18,7 @@ st.write("""
 Application of Python in Real-World Situations
 """)
 
-data = pd.read_csv("E:/Study Material/Python Programs/Diabetes Detection Using ML/diabetes.csv")
+data = pd.read_csv("diabetes.csv")
 
 st.subheader("Data Information")
 
