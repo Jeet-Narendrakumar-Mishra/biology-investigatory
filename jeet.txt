@@ -1,0 +1,3 @@
+Network URL: http://10.12.31.20:8501
+
+  External URL: http://34.82.55.159:8501
