@@ -69,17 +69,10 @@ model.fit(x_train,y_train)
 
 predictions = model.predict(user_input)
 
-# final_predictions = str(predictions)
-# if final_predictions == "0":
-#     st.write("""
-#             # Predictions :
-#             Your test for diabetes is NEGATIVE.
-#             """)
-# if final_predictions == "1":
-#     st.write("""
-#             # Predictions :
-#             Your test for diabetes is POSITIVE.
-#             """)
+if str(predictions) == '[0]':
+    st.subheader("Predictions")
+    st.write("The person is not diabetic.")
+elif str(predictions) == '[1]':
+    st.subheader("Predictions")
+    st.write("The person is diabetic.")
 
-st.subheader("Predictions :")
-st.write(predictions)
